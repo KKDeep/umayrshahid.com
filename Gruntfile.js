@@ -361,7 +361,19 @@ module.exports = function (grunt) {
         'imagemin',
         'svgmin'
       ]
-    }
+    },
+	
+	'ftp-deploy': {
+	  build: {
+		auth: {
+		  host: 'umayrshahid.com',
+		  port: 21,
+		  authKey: 'root'
+		},
+		src: 'dist/',
+		dest: '/'
+	  }
+	}
   });
 
 
@@ -417,7 +429,10 @@ module.exports = function (grunt) {
     'usemin',
     'htmlmin'
   ]);
-
+  grunt.registerTask('deploy', [
+    'build',
+	'ftp-deploy'
+  ]);
   grunt.registerTask('default', [
     'newer:jshint',
     'test',
