@@ -10,10 +10,18 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
   padding: 0.2em 0;
 }
 
+html{
+  height: 100%;
+}
 /* Space out content a bit */
 body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  min-height: 100%;
+  &.black-border{
+    border:15px solid #333;
+    box-sizing: border-box;
+  }
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
