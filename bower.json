@@ -2,9 +2,6 @@
   "name": "umayrshahid-com",
   "private": true,
   "dependencies": {
-    "bootstrap-sass-official": "~3.2.0",
-    "angular": "~1.3.8",
-    "angular-route": "~1.3.8",
-    "font-awesome": "~4.2.0"
+    "normalize.css": "~3.0.2"
   }
 }
