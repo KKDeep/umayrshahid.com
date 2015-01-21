@@ -1,68 +1,133 @@
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans+Mono);
-@media only screen and (max-width : 480px) {
-    .container{
+
+@media only screen and (max-width: 480px) {
+    .container {
         width: 90% !important;
         margin-top: 10% !important;
         margin-left: 5% !important;
     }
 }
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-    .container{
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .container {
         width: 80% !important;
         margin-top: 10% !important;
         margin-left: 10% !important;
     }
 }
+
 body {
     font-family: 'Droid Sans Mono',;
+
+    &.white {
+        h1, h2, h3, h4, h5, h6, p, ul {
+            color: #333;
+        }
+        span {
+            &.underline {
+                color: #000;
+            }
+        }
+        a {
+            color: #555;
+            &:visited {
+                color: #888;
+            }
+        }
+    }
+    &.black {
+        background: #0C0C0C;
+        h1, h2, h3, h4, h5, h6, p, ul {
+            color: #EEE;
+        }
+        span {
+            &.underline {
+                color: #FFF;
+            }
+        }
+        a {
+            color: #BBB;
+            &:visited {
+                color: #999;
+            }
+        }
+    }
+
+    transition: background 0.3s ease-in;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, ul, span {
+    transition: color 0.3s ease-in;
 }
 
 h1, h2, h3, h4, h5, h6, p {
     font-weight: normal;
     padding: 0;
     margin: 0;
-    color:#333;
+
 }
 
-.container{
+.container {
     width: 50%;
     margin-top: 15%;
     margin-left: 25%;
     text-align: center;
 }
 
+span {
+    &.underline {
 
-span{
-    &.underline{
-        color:#000;
         text-decoration: underline;
     }
 }
 
-p{
+p {
     font-size: 14px;
-    &#intro{
+    &#intro {
         margin-top: 8%;
     }
 }
 
-ul{
+ul {
     font-size: 14px;
-    &#social{
+    &#social {
         margin-top: 5%;
         list-style: none;
-        li{
+        li {
             display: inline;
         }
     }
 }
 
-a{
-    color: #555;
-    &:hover, &:active{
-        color:#E7473E !important;
-    }
-    &:visited{
-        color:#888;
+a {
+    &:hover, &:active {
+        color: #E7473E !important;
     }
 }
+
+footer {
+    position: absolute;
+    bottom: 3px;
+    clear: both;
+    width: 100%;
+    .left, .right {
+        width: 49.5%;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+    }
+    a, p {
+        font-size: 10px;
+    }
+    .left {
+        text-indent: 10px;
+    }
+    .right {
+        p {
+            padding-right: 10px;
+        }
+        text-align: right;
+    }
+
+}
+
