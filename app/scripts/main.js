@@ -7,7 +7,7 @@
     var toggleSwitch = document.getElementById('toggleLights');
     var options = ['black', 'white'];
     var toggle = false;
-    var toggleText = ['Turn off the lights', 'Turn on the lights']
+    var toggleText = ['Turn off the lights', 'Turn on the lights'];
     toggleSwitch.addEventListener('click', function (e) {
         e.preventDefault();
         var body = document.getElementsByTagName('body')[0];
