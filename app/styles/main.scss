@@ -1,5 +1,4 @@
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans+Mono);
-
 @media only screen and (max-width: 480px) {
     .container {
         width: 90% !important;
@@ -17,8 +16,7 @@
 }
 
 body {
-    font-family: 'Droid Sans Mono',;
-
+    font-family: 'Droid Sans Mono', ;
     &.white {
         h1, h2, h3, h4, h5, h6, p, ul {
             color: #333;
@@ -52,31 +50,42 @@ body {
             }
         }
     }
-
     transition: background 0.3s ease-in;
 }
 
-h1, h2, h3, h4, h5, h6, p, a, ul, span {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+span {
     transition: color 0.3s ease-in;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     font-weight: normal;
     padding: 0;
     margin: 0;
-
 }
-
 .container {
-    width: 50%;
-    margin-top: 15%;
-    margin-left: 25%;
+    width: 55%;
+    margin-top: 13%;
+    margin-left: 22.5%;
     text-align: center;
 }
 
 span {
     &.underline {
-
         text-decoration: underline;
     }
 }
@@ -116,7 +125,8 @@ footer {
         margin: 0;
         padding: 0;
     }
-    a, p {
+    a,
+    p {
         font-size: 10px;
     }
     .left {
@@ -128,6 +138,4 @@ footer {
         }
         text-align: right;
     }
-
 }
-
